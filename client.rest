@@ -1,0 +1,25 @@
+#GET http://localhost:3000/client/all
+
+# POST http://localhost:3000/client/add
+# Content-Type: application/json
+
+# {
+#     "email": "ahmed8@gmail.com",
+#     "nom": "ahmed8",
+#     "prenom": "ahmed8",
+#     "age": 20,
+#     "password": "azerty"
+# }
+
+# PUT  http://localhost:3000/client/update/ahmed8@gmail.com
+# Content-Type: application/json
+
+# {
+#     "email": "test1334@gmail.com",
+#     "nom": "test233434",
+#     "prenom": "EZCxERTE",
+#     "age": 20,
+#     "password": "azerty"
+# }
+
+DELETE http://localhost:3000/client/delete/test134@gmail.com
