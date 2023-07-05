@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo-container
+    ports:
+      - 27017: 27017
+    volumes:
+      - ./:/data/db
+
+  api:
+    build: ./DockerFile
+    container_name: apictn
+    depends_on:
+      - mongo
+    ports:
+      - 3000: 3000
+    volumes:
+      - apiv: /app/data
+
+volumes:
+  apiv:
+
